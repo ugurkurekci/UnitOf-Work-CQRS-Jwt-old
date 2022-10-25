@@ -1,17 +1,19 @@
 ﻿using Domain.Data.EFCore;
 using Domain.Repositories.Abstraction;
-using Domain.Repositories.Concretes;
 
 namespace Domain;
 public class UnitOfWork : IUnitOfWork
 {
     public readonly ProjectDataContext _projectDataContext;
 
-    public UnitOfWork(ProjectDataContext projectDataContext)
+    public UnitOfWork(
+        ProjectDataContext projectDataContext,
+        IProductRepository productRepository,
+        ICategoryRepository categoryRepository)
     {
         _projectDataContext = projectDataContext;
-        ProductRepository = new ProductRepository(_projectDataContext);
-        CategoryRepository = new CategoryRepository(_projectDataContext);
+        CategoryRepository = categoryRepository;
+        ProductRepository = productRepository;
     }
 
     public IProductRepository ProductRepository { get; private set; }

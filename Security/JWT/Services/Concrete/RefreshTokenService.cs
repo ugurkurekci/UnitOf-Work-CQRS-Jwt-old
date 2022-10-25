@@ -19,7 +19,7 @@ public class RefreshTokenService : IRefreshTokenService
         List<Claim> claims = new()
         {
             new Claim("ID", user.ID.ToString()),
-            new Claim(ClaimTypes.Email,user.EMail)
+            new Claim("CompanyID",user.EMail)
 
         };
         return _tokenGenerator.Generate(_jwtSettings.RefreshTokenSecret, _jwtSettings.Issuer, _jwtSettings.Audience,
