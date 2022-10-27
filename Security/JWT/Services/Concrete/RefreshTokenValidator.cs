@@ -4,15 +4,17 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 
 namespace Security.JWT.Services.Concrete;
+
 public class RefreshTokenValidator : IRefreshTokenValidator
 {
-    private readonly JwtSettings _jwtSettings;
 
+    private readonly JwtSettings _jwtSettings;
     public RefreshTokenValidator(JwtSettings jwtSettings) => _jwtSettings = jwtSettings;
 
     public bool Validate(string refreshToken)
     {
-        var validationParameters = new TokenValidationParameters
+
+        TokenValidationParameters validationParameters = new TokenValidationParameters
         {
             ValidateIssuerSigningKey = true,
             ValidateIssuer = true,
@@ -35,5 +37,7 @@ public class RefreshTokenValidator : IRefreshTokenValidator
         {
             return false;
         }
+
     }
+
 }

@@ -2,10 +2,13 @@
 using Security.JWT.Services.Abstraction;
 
 namespace Security.JWT.Services.Concrete;
+
 public class AuthenticateService : IAuthenticateService
 {
+
     private readonly IAccessTokenService _accessTokenService;
     private readonly IRefreshTokenService _refreshTokenService;
+
     public AuthenticateService(IAccessTokenService accessTokenService, IRefreshTokenService refreshTokenService)
     {
         _accessTokenService = accessTokenService;
@@ -21,5 +24,7 @@ public class AuthenticateService : IAuthenticateService
             AccessToken = _accessTokenService.Generate(user),
             RefreshToken = refreshToken
         });
+
     }
+
 }

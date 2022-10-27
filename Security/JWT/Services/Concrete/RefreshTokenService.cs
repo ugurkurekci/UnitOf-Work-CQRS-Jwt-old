@@ -3,6 +3,7 @@ using Security.JWT.Services.Abstraction;
 using System.Security.Claims;
 
 namespace Security.JWT.Services.Concrete;
+
 public class RefreshTokenService : IRefreshTokenService
 {
     private readonly ITokenGenerator _tokenGenerator;

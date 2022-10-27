@@ -4,11 +4,14 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers;
+
 [ApiController]
 [Route("[controller]")]
 public class ProductController : ControllerBase
 {
+
     private readonly IProductService _productService;
+
     public ProductController(IProductService productService)
     {
         _productService = productService;
@@ -21,6 +24,7 @@ public class ProductController : ControllerBase
         return Ok(_productService.GetAll());
     }
 
+    [Authorize]
     [HttpGet("{id}")]
     public IActionResult GetByID(int id)
     {
@@ -28,8 +32,10 @@ public class ProductController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize]
     public IActionResult Post(Product product)
     {
         return Ok(_productService.Add(product));
     }
+
 }

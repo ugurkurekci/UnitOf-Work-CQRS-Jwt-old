@@ -3,8 +3,10 @@ using Security.JWT.Services.Abstraction;
 using System.Security.Claims;
 
 namespace Security.JWT.Services.Concrete;
+
 public class AccessTokenService : IAccessTokenService
 {
+
     private readonly ITokenGenerator _tokenGenerator;
     private readonly JwtSettings _jwtSettings;
 
@@ -24,4 +26,5 @@ public class AccessTokenService : IAccessTokenService
         return _tokenGenerator.Generate(_jwtSettings.AccessTokenSecret, _jwtSettings.Issuer, _jwtSettings.Audience,
             _jwtSettings.AccessTokenExpirationMinutes, claims);
     }
+
 }

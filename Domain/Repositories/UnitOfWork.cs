@@ -2,8 +2,10 @@
 using Domain.Repositories.Abstraction;
 
 namespace Domain;
+
 public class UnitOfWork : IUnitOfWork
 {
+
     public readonly ProjectDataContext _projectDataContext;
 
     public UnitOfWork(

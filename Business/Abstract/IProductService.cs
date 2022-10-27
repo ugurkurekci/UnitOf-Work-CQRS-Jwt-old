@@ -4,9 +4,11 @@ namespace Business.Abstract;
 
 public interface IProductService
 {
+
     int Add(Product product);
 
-    IList<Product> GetAll();
+    Task<IReadOnlyList<Product>> GetAll();
 
-    Product GetById(int id);
+    Task<Product> GetById(int id);
+
 }

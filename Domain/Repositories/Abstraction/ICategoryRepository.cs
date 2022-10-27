@@ -2,9 +2,7 @@
 using Domain.Repositories.Base;
 
 namespace Domain.Repositories.Abstraction;
-public interface ICategoryRepository : IKeyRepositoryBase<Category>
+
+public interface ICategoryRepository : IRepositoryBase<Category>
 {
-
-    Category GetByName(string name);
-
 }

@@ -3,10 +3,6 @@ using Domain.Repositories.Base;
 
 namespace Domain.Repositories.Abstraction;
 
-
-public interface IProductRepository : IDefaultRepositoryBase<Product>
+public interface IProductRepository : IRepositoryBase<Product>
 {
-
-    Product GetByStock(int stock);
-
 }

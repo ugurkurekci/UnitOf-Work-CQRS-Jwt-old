@@ -2,8 +2,10 @@
 using Security.JWT.Services.Abstraction;
 
 namespace Security.JWT.Services.Handlers;
+
 public class RefreshCommandHandler : IRequestHandler<RefreshCommand, Tokens>
 {
+
     private readonly IAuthenticateService _authenticateService;
     private readonly IRefreshTokenValidator _refreshTokenValidator;
 
@@ -29,5 +31,7 @@ public class RefreshCommandHandler : IRequestHandler<RefreshCommand, Tokens>
         }
 
         return await _authenticateService.Authenticate(request.User, cancellationToken);
+
     }
+
 }

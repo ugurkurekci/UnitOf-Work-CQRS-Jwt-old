@@ -3,8 +3,10 @@ using Domain;
 using Domain.Entities;
 
 namespace Business.Concrete;
+
 public class ProductService : IProductService
 {
+
     private readonly IUnitOfWork _unitOfWork;
 
     public ProductService(IUnitOfWork unitOfWork)
@@ -19,13 +21,14 @@ public class ProductService : IProductService
         return product.ID;
     }
 
-    public IList<Product> GetAll()
+    public Task<IReadOnlyList<Product>> GetAll()
     {
         return _unitOfWork.ProductRepository.GetAll();
     }
 
-    public Product GetById(int id)
+    public Task<Product> GetById(int id)
     {
-        return _unitOfWork.ProductRepository.GetByID(id);
+        return _unitOfWork.ProductRepository.GetByFilter(x => x.ID == id);
     }
+
 }

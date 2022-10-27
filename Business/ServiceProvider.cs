@@ -4,23 +4,24 @@ using Domain;
 using Domain.Data.EFCore;
 using Domain.Repositories.Abstraction;
 using Domain.Repositories.Concretes;
-using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using Security.JWT.Services.Abstraction;
 using Security.JWT.Services.Concrete;
 using System.Reflection;
 
 namespace Business;
+
 public static class ServiceProvider
 {
+
     public static void MyDependencyInjections(this IServiceCollection services)
     {
 
         // DbContext
         services.AddScoped<ProjectDataContext>();
 
+        // AutoMapper
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
-
 
         // Repositories
         services.AddScoped<IProductRepository, ProductRepository>();
@@ -35,6 +36,6 @@ public static class ServiceProvider
         services.AddScoped<IRefreshTokenValidator, RefreshTokenValidator>();
         services.AddScoped<IAuthenticateService, AuthenticateService>();
 
-
     }
+
 }

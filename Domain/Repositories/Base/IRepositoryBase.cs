@@ -1,15 +1,20 @@
-﻿namespace Domain.Repositories.Base;
+﻿using System.Linq.Expressions;
 
+namespace Domain.Repositories.Base;
 
-public interface IRepositoryBase<T> where T : class
+public interface IRepositoryBase<TSource> where TSource : class
 {
 
-    IList<T> GetAll();
+    Task<IReadOnlyList<TSource>> GetAll();
 
-    void Add(T entity);
+    Task<IReadOnlyList<TSource>> GetAllByFilter(Expression<Func<TSource, bool>> filter);
 
-    void Update(T entity);
+    Task<TSource> GetByFilter(Expression<Func<TSource, bool>> filter);
 
-    void Delete(T entity);
+    Task Add(TSource entity);
+
+    Task Update(TSource entity);
+
+    Task Delete(TSource entity);
 
 }

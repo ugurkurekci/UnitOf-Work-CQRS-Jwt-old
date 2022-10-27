@@ -2,8 +2,10 @@
 using MediatR;
 
 namespace Security.JWT.Services.Handlers;
+
 public class RefreshCommand : IRequest<Tokens>
 {
+
     public User User { get; set; }
     public RefreshRequest RefreshRequest { get; set; }
 
@@ -12,4 +14,5 @@ public class RefreshCommand : IRequest<Tokens>
         User = user;
         RefreshRequest = refreshRequest;
     }
+
 }

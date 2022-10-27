@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Business\\Business.csproj": {}
+    "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Business\\Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Business\\Business.csproj": {
+    "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\UGUR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Business\\obj\\",
+        "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\yapidrom-ugur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\UGUR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yapidrom-ugur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Domain\\Domain.csproj"
+              "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Security\\Security.csproj": {
-                "projectPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Security\\Security.csproj"
+              "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\Security.csproj": {
+                "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\Security.csproj"
               }
             }
           }
@@ -80,17 +80,17 @@
         }
       }
     },
-    "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Domain\\Domain.csproj": {
+    "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\UGUR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\yapidrom-ugur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\UGUR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yapidrom-ugur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -116,6 +116,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.10, )"
@@ -169,17 +173,17 @@
         }
       }
     },
-    "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Security\\Security.csproj": {
+    "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Security\\Security.csproj",
+        "projectUniqueName": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\Security.csproj",
         "projectName": "Security",
-        "projectPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Security\\Security.csproj",
-        "packagesPath": "C:\\Users\\UGUR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Security\\obj\\",
+        "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\Security.csproj",
+        "packagesPath": "C:\\Users\\yapidrom-ugur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\UGUR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yapidrom-ugur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -193,8 +197,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Domain\\Domain.csproj"
+              "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj"
               }
             }
           }

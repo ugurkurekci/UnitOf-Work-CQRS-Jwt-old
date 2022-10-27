@@ -1,24 +1,13 @@
-﻿using Domain.Data.EFCore;
+﻿using AutoMapper;
 using Domain.Entities;
 using Domain.Repositories.Abstraction;
 using Domain.Repositories.Base;
+using Microsoft.EntityFrameworkCore;
 
 namespace Domain.Repositories.Concretes;
 
-
-public class ProductRepository : DefaultRepositoryBase<Product>, IProductRepository
+public class ProductRepository : RepositoryBase<Product>, IProductRepository
 {
-
-    private readonly ProjectDataContext _projectDataContext;
-
-    public ProductRepository(ProjectDataContext projectDataContext) : base(projectDataContext)
-    {
-        _projectDataContext = projectDataContext;
-    }
-
-    public Product GetByStock(int stock)
-    {
-        return _projectDataContext.Product.Find(stock);
-    }
+    public ProductRepository(DbContext context, IMapper mapper) : base(context, mapper) { }
 
 }

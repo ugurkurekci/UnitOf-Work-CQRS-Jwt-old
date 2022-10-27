@@ -1035,6 +1035,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "AutoMapper": "12.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -2618,19 +2619,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\UGUR\\.nuget\\packages\\": {}
+    "C:\\Users\\yapidrom-ugur\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Business\\Business.csproj",
-      "packagesPath": "C:\\Users\\UGUR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Business\\obj\\",
+      "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Business\\Business.csproj",
+      "packagesPath": "C:\\Users\\yapidrom-ugur\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\UGUR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yapidrom-ugur\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2644,11 +2645,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Domain\\Domain.csproj"
+            "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Security\\Security.csproj": {
-              "projectPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Security\\Security.csproj"
+            "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\Security.csproj": {
+              "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\Security.csproj"
             }
           }
         }

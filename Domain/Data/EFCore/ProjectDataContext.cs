@@ -13,7 +13,6 @@ public class ProjectDataContext : DbContext
 
     public DbSet<User> User { get; set; }
 
-
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 
     {

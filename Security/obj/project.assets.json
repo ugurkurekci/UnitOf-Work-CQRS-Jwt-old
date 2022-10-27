@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AutoMapper/12.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MediatR/11.0.0": {
         "type": "package",
         "dependencies": {
@@ -31,7 +47,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -993,6 +1009,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "AutoMapper": "12.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -1009,6 +1026,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/12.0.0": {
+      "sha512": "0Rmg0zI5AFu1O/y//o9VGyhxKjhggWpk9mOA1tp0DEVx40c61bs+lnQv+0jUq8XbniF7FKgIVvI1perqiMtLrA==",
+      "type": "package",
+      "path": "automapper/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.12.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.dll",
+        "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
     "MediatR/11.0.0": {
       "sha512": "8klzVGZQiA2oxZRzQFBZbdPD/IQUm9RYtfiyTDKhxDQ99Gi93+GXt1ZJjH2D7Lh7ZFHCv5XdkwbmfHEQBCatPg==",
       "type": "package",
@@ -1039,10 +1071,10 @@
         "mediatr.contracts.nuspec"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1055,6 +1087,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -1064,7 +1097,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -2511,19 +2544,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\UGUR\\.nuget\\packages\\": {}
+    "C:\\Users\\yapidrom-ugur\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Security\\Security.csproj",
+      "projectUniqueName": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\Security.csproj",
       "projectName": "Security",
-      "projectPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Security\\Security.csproj",
-      "packagesPath": "C:\\Users\\UGUR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Security\\obj\\",
+      "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\Security.csproj",
+      "packagesPath": "C:\\Users\\yapidrom-ugur\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\UGUR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yapidrom-ugur\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2537,8 +2570,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\UGUR\\Desktop\\Jwt-Example\\Jwt-Example\\Domain\\Domain.csproj"
+            "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj"
             }
           }
         }

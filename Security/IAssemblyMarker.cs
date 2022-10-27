@@ -1,4 +1,3 @@
 ﻿namespace Security;
-public interface IAssemblyMarker
-{
-}
+
+public interface IAssemblyMarker { }

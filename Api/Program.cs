@@ -44,9 +44,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.MyDependencyInjections();
 builder.Services.AddMediatR(typeof(IAssemblyMarker).Assembly);
 
-
-
-var jwtSettings = new JwtSettings();
+JwtSettings jwtSettings = new JwtSettings();
 builder.Configuration.Bind(nameof(JwtSettings), jwtSettings);
 
 builder.Services.AddSingleton(jwtSettings);
@@ -72,8 +70,6 @@ builder.Services.AddAuthentication(x =>
             ClockSkew = TimeSpan.Zero
         };
     });
-
-
 
 
 var app = builder.Build();
