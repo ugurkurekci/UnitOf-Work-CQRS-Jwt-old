@@ -1,4 +1,6 @@
-﻿using MediatR;
+﻿using AutoMapper;
+using Domain.Entities;
+using MediatR;
 using Security.JWT.Services.Abstraction;
 
 namespace Security.JWT.Services.Handlers;
@@ -8,12 +10,15 @@ public class RefreshCommandHandler : IRequestHandler<RefreshCommand, Tokens>
 
     private readonly IAuthenticateService _authenticateService;
     private readonly IRefreshTokenValidator _refreshTokenValidator;
+    private readonly IMapper _mapper;
 
     public RefreshCommandHandler(IRefreshTokenValidator refreshTokenValidator,
-         IAuthenticateService authenticateService)
+         IAuthenticateService authenticateService,
+         IMapper mapper)
     {
         _refreshTokenValidator = refreshTokenValidator;
         _authenticateService = authenticateService;
+        _mapper = mapper;
     }
 
     public async Task<Tokens> Handle(RefreshCommand request, CancellationToken cancellationToken)
@@ -29,8 +34,8 @@ public class RefreshCommandHandler : IRequestHandler<RefreshCommand, Tokens>
 
             };
         }
-
-        return await _authenticateService.Authenticate(request.User, cancellationToken);
+        User userid = _mapper.Map<User>(request.RefreshRequest);
+        return await _authenticateService.Authenticate(request.RefreshRequest);
 
     }
 

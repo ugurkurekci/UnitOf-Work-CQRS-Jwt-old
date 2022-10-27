@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Business\\Business.csproj": {}
+    "C:\\Users\\UGUR\\Desktop\\jwt\\Business\\Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Business\\Business.csproj": {
+    "C:\\Users\\UGUR\\Desktop\\jwt\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\UGUR\\Desktop\\jwt\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\yapidrom-ugur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Business\\obj\\",
+        "projectPath": "C:\\Users\\UGUR\\Desktop\\jwt\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\UGUR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\UGUR\\Desktop\\jwt\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yapidrom-ugur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\UGUR\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj"
+              "C:\\Users\\UGUR\\Desktop\\jwt\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\UGUR\\Desktop\\jwt\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\Security.csproj": {
-                "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\Security.csproj"
+              "C:\\Users\\UGUR\\Desktop\\jwt\\Security\\Security.csproj": {
+                "projectPath": "C:\\Users\\UGUR\\Desktop\\jwt\\Security\\Security.csproj"
               }
             }
           }
@@ -80,17 +80,17 @@
         }
       }
     },
-    "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj": {
+    "C:\\Users\\UGUR\\Desktop\\jwt\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\UGUR\\Desktop\\jwt\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\yapidrom-ugur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\UGUR\\Desktop\\jwt\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\UGUR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\UGUR\\Desktop\\jwt\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yapidrom-ugur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\UGUR\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -173,17 +173,17 @@
         }
       }
     },
-    "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\Security.csproj": {
+    "C:\\Users\\UGUR\\Desktop\\jwt\\Security\\Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\Security.csproj",
+        "projectUniqueName": "C:\\Users\\UGUR\\Desktop\\jwt\\Security\\Security.csproj",
         "projectName": "Security",
-        "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\Security.csproj",
-        "packagesPath": "C:\\Users\\yapidrom-ugur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Security\\obj\\",
+        "projectPath": "C:\\Users\\UGUR\\Desktop\\jwt\\Security\\Security.csproj",
+        "packagesPath": "C:\\Users\\UGUR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\UGUR\\Desktop\\jwt\\Security\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yapidrom-ugur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\UGUR\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -197,8 +197,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\yapidrom-ugur\\Desktop\\test\\Domain\\Domain.csproj"
+              "C:\\Users\\UGUR\\Desktop\\jwt\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\UGUR\\Desktop\\jwt\\Domain\\Domain.csproj"
               }
             }
           }

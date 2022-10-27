@@ -1,6 +1,7 @@
 ﻿using Domain.Entities;
 using Security.JWT.Services.Abstraction;
 using System.Security.Claims;
+using System.Security.Cryptography;
 
 namespace Security.JWT.Services.Concrete;
 
@@ -27,4 +28,13 @@ public class RefreshTokenService : IRefreshTokenService
            _jwtSettings.RefreshTokenExpirationMinutes, claims);
     }
 
+    public string GenerateRefreshToken()
+    {
+        var randomNumber = new byte[32];
+        using (var rng = RandomNumberGenerator.Create())
+        {
+            rng.GetBytes(randomNumber);
+            return Convert.ToBase64String(randomNumber);
+        }
+    }
 }

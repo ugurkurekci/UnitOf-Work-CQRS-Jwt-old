@@ -7,4 +7,8 @@ public interface IRefreshTokenService
 
     string Generate(User user);
 
+    string GenerateRefreshToken();
+
+
+
 }

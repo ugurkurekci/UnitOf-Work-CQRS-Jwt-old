@@ -6,9 +6,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Domain.Repositories.Concretes;
 
-public class CategoryRepository : RepositoryBase<Category>, ICategoryRepository
+public class CategoryRepository : ICategoryRepository
 {
 
-    public CategoryRepository(DbContext context, IMapper mapper) : base(context, mapper) { }
 
 }

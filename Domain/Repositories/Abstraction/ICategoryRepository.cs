@@ -3,6 +3,6 @@ using Domain.Repositories.Base;
 
 namespace Domain.Repositories.Abstraction;
 
-public interface ICategoryRepository : IRepositoryBase<Category>
+public interface ICategoryRepository 
 {
 }
